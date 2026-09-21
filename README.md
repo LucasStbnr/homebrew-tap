@@ -31,7 +31,7 @@ a single static Go binary with no runtime dependencies, so there is nothing for
 a formula to build that the release archive does not already contain.
 
 The binaries are not notarised, so the cask clears the quarantine attribute on
-install — otherwise Gatekeeper refuses to run them. Homebrew has verified the
+install, because Gatekeeper otherwise refuses to run them. Homebrew has verified the
 download's checksum over TLS by that point.
 
 ### Uninstalling
@@ -48,7 +48,7 @@ brew uninstall --zap --cask ferry
 ```
 
 `--zap` also trashes `~/Library/Application Support/ferry`, **which is the only
-copy of your read state, folders and drafts** — Resend does not store any of
+copy of your read state, folders and drafts**. Resend does not store any of
 it. Back that directory up first if you might want it.
 
 ## Contents
