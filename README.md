@@ -31,8 +31,8 @@ a single static Go binary with no runtime dependencies, so there is nothing for
 a formula to build that the release archive does not already contain.
 
 The binaries are not notarised, so the cask clears the quarantine attribute on
-install, because Gatekeeper otherwise refuses to run them. Homebrew has verified the
-download's checksum over TLS by that point.
+install, because Gatekeeper otherwise refuses to run them. Homebrew has
+verified the download's checksum over TLS by that point.
 
 ### Uninstalling
 
